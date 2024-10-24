@@ -15,7 +15,7 @@ public class Calculator {
 
         if (input.equals("Basic Math")){
             System.out.println("Please Enter Arithmetic Operation Preference:");
-            System.out.println("[1] Addition\n[2] Subtraction\n[3] Multiplication\n[4] Division");
+            System.out.println("[1] Addition\n[2] Subtraction\n[3] Multiplication\n[4] Division\n[5] Modulo");
             String operation = scanner.nextLine();
 
             System.out.println("Enter the first number: ");
@@ -41,6 +41,9 @@ public class Calculator {
                     } else{
                         System.out.printf("%.2f / %.2f = %.2f", number1, number2, operations.divide(number1, number2));
                     }
+                    break;
+                case "Modulo":
+                    System.out.printf("%.2f %% %.2f = %.2f", number1, number2, operations.modulo(number1, number2));
                     break;
                 default:
                     System.out.printf("%s is not a supported operation.", operation);

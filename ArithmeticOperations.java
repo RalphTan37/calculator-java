@@ -17,4 +17,8 @@ public class ArithmeticOperations {
         }
         return number1 / number2;
     }
+
+    public double modulo(double number1, double number2){
+        return number1 % number2;
+    }
 }
